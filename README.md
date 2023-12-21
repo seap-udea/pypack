@@ -1,4 +1,4 @@
-# PyPack
+# PyPacking
 ## Use a short explanatory subtitle like, Create Python packages easily
 <!-- Be sure to change `pypack` for the name of your package -->
 
@@ -6,7 +6,7 @@
 [![version](https://img.shields.io/pypi/v/pypack?color=blue)](https://pypi.org/project/pypack/)
 [![downloads](https://img.shields.io/pypi/dw/pypack)](https://pypi.org/project/pypack/)
 
-`PyPack` is a Python package template. It provides the minimal set of
+`PyPacking` is a Python package template. It provides the minimal set of
 files and functionalities to create and distribute a python package
 using `PyPI`.  This `README` is one of the files you must provide with
 the package. Change it according to the information you want to
@@ -15,7 +15,7 @@ provide the users.
 To start a new package using this template follow this procedure (we
 will assume that the name of your package is `mypack`):
 
-- Get `pypack` template: `git clone https://github.com/seap-udea/pypack mypack`
+- Get `pypacking` template: `git clone https://github.com/seap-udea/pypacking mypack`
 - Install system prerrequisites: `sudo apt install python3-pip gcc`
 - Install python prerrequisites: `pip3 install build twine`
 - Configure your package:
@@ -41,7 +41,7 @@ different arquitectures.
 If you are using `PyPI` installation it's as simple as:
 
 ```
-pip install pypack
+pip install pypacking
 ```
 
 
@@ -53,8 +53,8 @@ your package.
 For instance:
 
 ```
-import pypack
-print(pypack.version)
+import pypacking
+print(pypacking.version)
 ```
 
 ## Code examples
@@ -64,7 +64,7 @@ Provide some detailed examples for more advanced users.
 For instance:
 
 ```
-import pypack
+import pypacking
 obj = MyClass()
 ```
 

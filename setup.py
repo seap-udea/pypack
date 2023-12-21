@@ -1,6 +1,6 @@
 import setuptools
 
-package = 'pypack'
+package = 'pypacking'
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
