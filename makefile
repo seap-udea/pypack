@@ -21,5 +21,5 @@ release:
 	@bash release.sh $(RELMODE) $(VERSION)
 
 install:
-	@echo "Installing locally..."
+	@echo "Installing locally (you should have permissions)..."
 	@$(PYTHON) -m pip install -e .

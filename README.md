@@ -1,10 +1,10 @@
 # PyPacking
 ## Use a short explanatory subtitle like, Create Python packages easily
-<!-- Be sure to change `pypack` for the name of your package -->
+<!-- Be sure to change `pypacking` for the name of your package -->
 
 <!-- This are visual tags that you may add to your package at the beginning with useful information on your package --> 
-[![version](https://img.shields.io/pypi/v/pypack?color=blue)](https://pypi.org/project/pypack/)
-[![downloads](https://img.shields.io/pypi/dw/pypack)](https://pypi.org/project/pypack/)
+[![version](https://img.shields.io/pypi/v/pypacking?color=blue)](https://pypi.org/project/pypacking/)
+[![downloads](https://img.shields.io/pypi/dw/pypacking)](https://pypi.org/project/pypacking/)
 
 `PyPacking` is a Python package template. It provides the minimal set of
 files and functionalities to create and distribute a python package
@@ -16,12 +16,14 @@ To start a new package using this template follow this procedure (we
 will assume that the name of your package is `mypack`):
 
 - Get `pypacking` template: `git clone https://github.com/seap-udea/pypacking mypack`
+- Remove the `.git` directory.
 - Install system prerrequisites: `sudo apt install python3-pip gcc`
 - Install python prerrequisites: `pip3 install build twine`
 - Configure your package:
   - Change variables in `.packrc`.
   - Change key variables in setup file `setup.py`.
-  - Change package prerrequisites in `pyroject.toml`
+  - Change package prerrequisites in `pyroject.toml`.
+  - Change package name in `src/__init__.py`
 - Create an account in `PyPI` and get a token and place it in `$HOME/.pypirc`
 - Release your first version: `make release VERSION=0.0.1`
 
