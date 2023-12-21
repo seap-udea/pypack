@@ -2,6 +2,9 @@ include .packrc
 RELMODE=release
 VERSION=0.0.0
 
+test:
+	$(PYTHON) -c "import $(PACKAGE)"
+
 clean:
 	@find . -name '*~' -delete
 	@find . -name '__pycache__' -type d | xargs rm -fr
@@ -15,8 +18,8 @@ cleanall:clean cleandist
 #Example: make release RELMODE=release VERSION=0.2.0.2 
 release:
 	@echo "Releasing a new version..."
-	@sh release.sh $(RELMODE) $(VERSION)
+	@bash release.sh $(RELMODE) $(VERSION)
 
 install:
 	@echo "Installing locally..."
-	@sudo $(PYTHON) -m pip install -e .
+	@$(PYTHON) -m pip install -e .

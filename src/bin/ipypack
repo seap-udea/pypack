@@ -1,3 +1,0 @@
-#!/bin/sh
-package="pypack"
-python3 -c "import $package"
