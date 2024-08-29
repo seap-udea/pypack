@@ -61,8 +61,8 @@ rm -rf dist/*
 # Report version
 ##################################################################
 echo $version >> .versions
-cp $PACKAGE/version.py tmp/version.py.bak
-echo "version='$version'" > $PACKAGE/version.py
+cp src/version.py tmp/version.py.bak
+echo "version='$version'" > src/version.py
 
 ##################################################################
 # Build package
